@@ -2,7 +2,7 @@
 
 ## 1. Nama dan NIM
 * **Nama:** Mustafida
-* **NIM:** [Masukkan NIM Anda di sini]
+* **NIM:** [F1D02410126]
 
 ## 2. Topik dan Cara Menjalankan Program
 * **Topik:** Diagnosa Masalah Jaringan Wi-Fi Rumah
