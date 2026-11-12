@@ -1,0 +1,14 @@
+{
+  "judul": "Diagnosa Masalah Jaringan Wi-Fi Rumah",
+  "batas": "Aturan ini disusun berdasarkan dokumentasi teknis pemecahan masalah jaringan rumahan (standar umum jaringan IEEE 802.11) dan hanya mencakup masalah kabel fisik, gangguan jalur nirkabel, serta kegagalan perangkat router. Hasilnya merupakan saran awal troubleshooting, bukan keputusan akhir teknis profesional.",
+  "sumber": {
+    "S1": "Panduan Diagnostik Jaringan Lokal, Pusat Dokumentasi Jaringan Komputer, https://jaringan.local/panduan-router, diakses 11 November 2026",
+    "S2": "Troubleshooting Sinyal Nirkabel Rumah, Buletin Infrastruktur IT, https://infrastruktur.it/artikel/wifi-loss, diakses 11 November 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["lampu indikator router mati", "kabel daya longgar"], "mode": "atau", "maka": "router tidak menyala", "sumber": "S1"},
+    {"id": "R2", "jika": ["router tidak menyala", "tidak ada koneksi internet"], "mode": "dan", "maka": "kegagalan catu daya utama", "sumber": "S1"},
+    {"id": "R3", "jika": ["sinar router normal", "jarak perangkat terlalu jauh dari router"], "mode": "dan", "maka": "redaman sinyal tinggi", "sumber": "S2"},
+    {"id": "R4", "jika": ["redaman sinyal tinggi", "kecepatan internet sangat lambat"], "mode": "dan", "maka": "interferensi atau jangkauan lemah", "sumber": "S2"}
+  ]
+}
